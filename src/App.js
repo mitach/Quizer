@@ -20,9 +20,7 @@ function App() {
                     answers: [
                         question.correct_answer,
                         ...question.incorrect_answers
-                    ].sort(() => {
-                        Math.random()
-                    })
+                    ].sort(() => Math.random() - 0.5)
                 }))
 
                 setQuestions(questions);
